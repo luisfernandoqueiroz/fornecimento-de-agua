@@ -1,13 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-
-import { Home } from './pages/Home/index.tsx'
-// import { Login } from './pages/Login/index.tsx';
+import { App } from './App';
 
 import './global.scss';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <Home />
+    <App />
   </React.StrictMode>,
 )

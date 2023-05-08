@@ -1,6 +1,7 @@
 .aside {
     min-height: 24rem;
-    width: 20rem;
+    max-height: 24rem;
+    width: fit-content;
     background-color: var(--green-300);
 
     display: flex;

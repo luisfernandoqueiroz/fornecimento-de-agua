@@ -1,5 +1,3 @@
-import { Header } from "../../components/Header";
-import { Footer } from "../../components/Footer";
 import { Aside } from "../../components/Aside";
 import { Button } from "../../components/Button";
 
@@ -19,9 +17,6 @@ import styles from "./styles.module.scss";
 export function Home() {
 
   return (
-   <div className={styles.content}>
-    <Header/>
-
     <div className={styles.contentWrapper}>
       <div className={styles.userContent}>
         <img src={imagemDePerfil}/>
@@ -35,6 +30,7 @@ export function Home() {
         <Aside />
 
         <div className={styles.dashboard}>
+
           <Button type={'Clientes'} image={clientesImage}/>
           <Button type={'Faturas'} image={faturasImage}/>
           <Button type={'Leituras'} image={leiturasImage}/>
@@ -46,8 +42,5 @@ export function Home() {
         </div>
       </div>
     </div>
- 
-    <Footer />
-   </div>
   )
 }

@@ -1,19 +1,7 @@
-.principalContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
 .formContent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     height: fit-content;
     width: fit-content;
     padding: 2rem;
-    margin: 4rem;
     
     border: 4px solid var(--green-300);
     border-radius: 6px;
