@@ -1,0 +1,24 @@
+.principalContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 1rem;
+    width: 56rem;
+
+    border-bottom: 1px solid var(--gray-200);
+
+    span {
+        width: 14rem;
+        text-align: left;
+        font-weight: 500;
+    }
+
+    span:first-child {
+        width: 28rem;
+        text-align: left;
+    }
+}
+
+
+

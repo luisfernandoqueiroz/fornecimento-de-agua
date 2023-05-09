@@ -1,0 +1,73 @@
+.principalContent {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    margin-top: 4rem;
+    gap: 4rem;
+}
+
+.tableContent {
+    width: fit-content;
+    min-height: 28rem;
+    max-height: 28rem;
+
+    border: 2px solid var(--green-300);
+    border-radius: 8px;
+}
+
+.tableHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: var(--green-300);
+    padding: 1rem;
+
+    color: var(--gray-100);
+    font-weight: 500;
+    font-size: 1.4rem;
+
+    button {
+        background: var(--gray-100);
+        padding: .6rem;
+
+        border: 2px solid var(--gray-200);
+        border-radius: 8px;
+
+        font-weight: 500;
+        transition: background 300ms;
+    }
+
+    button:hover {
+        background: var(--gray-200);
+    }
+}
+
+.dataContent {
+    width: 56rem;
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border-bottom: 2px solid var(--green-300);
+
+    span {
+        width: 14rem;
+        text-align: left;
+
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    span:first-child {
+        width: 28rem;
+        text-align: left;
+    }
+
+}
+
+
+//ajustar o tamanho do tabela pra ter scroll quando estiver cheio

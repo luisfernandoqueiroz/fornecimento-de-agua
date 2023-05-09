@@ -1,7 +1,9 @@
 .principalContent {
     display: flex;
     align-items: flex-end;
-    gap: 3rem;
+    gap: 4rem;
+
+    margin-top: 4rem;
 
     form {
         display: flex;
@@ -55,10 +57,30 @@
             justify-content: center;
 
             gap: .4rem;
-
+           
             input {
+                align-self: center;
                 cursor: pointer;
             }
+        }
+
+        button {
+            width: 8rem;
+            height: 2.4rem;
+            align-self: flex-end;
+
+            color: var(--gray-100);
+            font-weight: 500;
+
+            border: none;
+            border-radius: 8px;
+
+            background: var(--green-300);
+            transition: background 300ms;
+        }
+
+        button:hover {
+            background: var(--green-500);
         }
     }
 
@@ -67,12 +89,4 @@
 .fieldsets {
     display: flex;
     gap: 1rem;
-}
-
-.dataFieldset {
-  
-}
-
-.addressFieldset {
-
 }

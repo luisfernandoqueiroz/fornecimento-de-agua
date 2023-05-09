@@ -1,7 +1,7 @@
 import { Aside } from "../../components/Aside";
 import styles from "./styles.module.scss";
 
-export function Customers() {
+export function RegisterCustomer() {
     return(
         <div className={styles.principalContent}>
             <Aside />
@@ -13,29 +13,29 @@ export function Customers() {
                         <legend>Dados</legend>
                         <label htmlFor="name">
                             Nome:
-                            <input type="text" id="name"/>
+                            <input type="text" id="name" required/>
                         </label>
                         <label htmlFor="cpf">
                             CPF:
-                            <input type="text" id="cpf" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}"/>
+                            <input type="text" id="cpf" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" required/>
                         </label>
                         <label htmlFor="phone">
                             Telefone:
-                            <input type="tel" pattern="[0-9]{11}"/>
+                            <input type="tel" pattern="[0-9]{11}" required/>
                         </label>
                         <label htmlFor="email">
                             Gmail:
-                            <input type="email" pattern=".+@gmail\.com" id="email"/>
+                            <input type="email" pattern=".+@gmail\.com" id="email" required/>
                         </label>
 
                         <div className={styles.associateCustomerLabels}>
                             <span>O cliente é associado?</span>
                             <label htmlFor="yes">
-                                <input type="radio" name="associate" id="yes"/>
+                                <input type="radio" name="associate" id="yes" required/>
                                 Sim
                             </label>
                             <label htmlFor="not">
-                                <input type="radio" name="associate" id="not"/>
+                                <input type="radio" name="associate" id="not" required/>
                                 Não
                             </label>
                         </div>
@@ -45,15 +45,15 @@ export function Customers() {
                         <legend>Endereço</legend>
                         <label htmlFor="address">
                             Cidade:
-                            <input type="text" id="address" />
+                            <input type="text" id="address" required/>
                         </label>
                         <label htmlFor="uf">
                             Unidade Federativa:
-                            <input type="text" id="uf" maxLength={2} minLength={2}/>
+                            <input type="text" id="uf" maxLength={2} minLength={2} required/>
                         </label>
                         <label htmlFor="addressNumber">
                             Número do endereço:
-                            <input type="number" id="addressNumber" maxLength={4} minLength={2}/>
+                            <input type="text" id="addressNumber" maxLength={4} pattern="[0-9]+" required/>
                         </label>
                         <label htmlFor="community">
                             Comunidade:
