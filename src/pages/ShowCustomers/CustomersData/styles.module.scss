@@ -4,20 +4,30 @@
     justify-content: space-around;
 
     padding: 1rem;
-    width: 56rem;
+    width: 59rem;
 
     border-bottom: 1px solid var(--gray-200);
+    gap: .6rem;
 
     span {
-        width: 14rem;
+        width: 10rem;
         text-align: left;
         font-weight: 500;
     }
 
     span:first-child {
-        width: 28rem;
-        text-align: left;
+        width: 1rem;
     }
+
+    span:nth-child(2) {
+        width: 20rem;
+    }
+
+    span:last-child {
+        width: 2rem;
+    }
+
+
 }
 
 

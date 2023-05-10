@@ -1,11 +1,8 @@
-import { Aside } from "../../components/Aside";
 import styles from "./styles.module.scss";
 
 export function RegisterCustomer() {
     return(
         <div className={styles.principalContent}>
-            <Aside />
-
             <form action="submit" id="customerForm">
                 <h2>CADASTRAR NOVO CLIENTE</h2>
                 <div className={styles.fieldsets}>

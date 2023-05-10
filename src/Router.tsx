@@ -10,9 +10,9 @@ import { RegisterCustomer } from './pages/RegisterCustomer'
 export function Router() {
   return (
     <Routes>
+      <Route path="/login" element={<Login />} />
       <Route path="/" element={<DefaultLayout />}>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
         <Route path="/show-customers" element={<ShowCustomers />} />
         <Route path="/register-customer" element={<RegisterCustomer />} />
       </Route>

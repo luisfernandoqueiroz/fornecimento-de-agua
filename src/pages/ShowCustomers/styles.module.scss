@@ -45,29 +45,45 @@
 }
 
 .dataContent {
-    width: 56rem;
+    width: 60rem;
     padding: 1rem;
 
     display: flex;
     align-items: center;
     justify-content: space-around;
-
+    
     border-bottom: 2px solid var(--green-300);
 
-    span {
-        width: 14rem;
-        text-align: left;
 
+    span {
+        width: 10rem;
         font-size: 1.1rem;
         font-weight: 600;
     }
 
     span:first-child {
-        width: 28rem;
-        text-align: left;
+        width: 1rem;
+
     }
+
+    span:nth-child(2) {
+        width: 20rem;
+    }
+
+    span:last-child {
+        width: 3rem;
+    }
+
 
 }
 
+.customersData {
+    max-height: 19rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
 
-//ajustar o tamanho do tabela pra ter scroll quando estiver cheio
+
+    // :nth-child(2n+1) {
+    //     background: var(--gray-200);
+    // } isso fica pra mais tarde quando tivermos uma lista de dados de clientes carregando
+}

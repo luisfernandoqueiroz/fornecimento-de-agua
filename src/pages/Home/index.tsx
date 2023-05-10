@@ -1,7 +1,6 @@
 import { Aside } from "../../components/Aside";
 import { Button } from "../../components/Button";
 
-import imagemDePerfil from "../../assets/luis.jpeg";
 import clientesImage from "../../assets/clientes.svg"
 import faturasImage from "../../assets/faturas.svg"
 import leiturasImage from "../../assets/leituras.svg"
@@ -18,19 +17,7 @@ export function Home() {
 
   return (
     <div className={styles.contentWrapper}>
-      <div className={styles.userContent}>
-        <img src={imagemDePerfil}/>
-        <span>
-          Boa noite, <strong>Luís Fernando Ramos Queiroz</strong><br/>
-          Escolha uma opção abaixo para continuar
-        </span>
-      </div>
-
-      <div className={styles.principalContent}>
-        <Aside />
-
         <div className={styles.dashboard}>
-
           <Button type={'Clientes'} image={clientesImage}/>
           <Button type={'Faturas'} image={faturasImage}/>
           <Button type={'Leituras'} image={leiturasImage}/>
@@ -40,7 +27,6 @@ export function Home() {
           <Button type={'Hidrômetros'} image={hidrometrosImage}/>
           <Button type={'Associação'} image={associacaoImage}/>
         </div>
-      </div>
     </div>
   )
 }
