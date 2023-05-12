@@ -1,13 +1,14 @@
 .contentWrapper {
     display: flex;
     flex-direction: column;
-    // width: 60%;
+    width: 80%;
 
 }
 
 .dashboard {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 
     gap: 3rem;

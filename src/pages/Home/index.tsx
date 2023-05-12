@@ -1,4 +1,4 @@
-import { Aside } from "../../components/Aside";
+import { NavLink } from "react-router-dom";
 import { Button } from "../../components/Button";
 
 import clientesImage from "../../assets/clientes.svg"
@@ -18,7 +18,9 @@ export function Home() {
   return (
     <div className={styles.contentWrapper}>
         <div className={styles.dashboard}>
-          <Button type={'Clientes'} image={clientesImage}/>
+          <NavLink to="/show-customers" title="Mostrar clientes" style={{textDecoration: 'none'}}> 
+            <Button type={'Clientes'} image={clientesImage}/>
+          </NavLink>
           <Button type={'Faturas'} image={faturasImage}/>
           <Button type={'Leituras'} image={leiturasImage}/>
           <Button type={'Funcionários'} image={funcionariosImage}/>
