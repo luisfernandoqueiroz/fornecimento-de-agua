@@ -5,19 +5,23 @@ import styles from "./styles.module.scss";
 export function Aside() {
     return (
         <div className={styles.aside}>
-          <span>
-            <UserCircle size={50}/>
-            João Pereira da Silva
-          </span>
           <div className={styles.asideButtonsContent}>
-            <div className={styles.asideButtons}>
-                <NavLink to="/login" title="Login">
-                  <button>Início</button>
-                </NavLink>
+            <span>
+              <UserCircle size={50}/>
+              João Pereira da Silva
+            </span>
+              <NavLink to="/" title="Login" className={styles.navLink}>
+                <button>Início</button>
+              </NavLink>
+              <NavLink to="#" className={styles.navLink}>
                 <button>Serviços</button>
+              </NavLink>
+              <NavLink to="#" className={styles.navLink}>
                 <button>Configurações</button>
-            </div>
-            <button className={styles.exitButton}>Sair</button>
+              </NavLink>
+              <NavLink to="#" className={styles.navLink}>
+                <button className={styles.exitButton}>Sair</button>
+              </NavLink>
           </div>
         </div>
     )

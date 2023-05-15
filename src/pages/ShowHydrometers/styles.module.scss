@@ -83,7 +83,7 @@
 }
 
 .dataContent {
-    width: 60rem;
+    width: 70rem;
     padding: 1rem;
 
     display: flex;
@@ -92,26 +92,20 @@
     
     border-bottom: 2px solid var(--green-300);
 
-
     span {
         width: 10rem;
         font-size: 1.1rem;
         font-weight: 600;
-    }
-
-    span:first-child {
-        width: 1rem;
-
-    }
-
-    span:nth-child(2) {
-        width: 20rem;
+        text-align: left;
     }
 
     span:last-child {
         width: 3rem;
     }
 
+    span:nth-child(2) {
+        width: 16rem;
+    }
 
 }
 

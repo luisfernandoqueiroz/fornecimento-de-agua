@@ -9,7 +9,7 @@ export function CustomersData() {
             <span>João Pereira da Silva</span>
             <span>123.456.789-00</span>
             <span>48912345678</span>
-            <NavLink to="/edit-customer" title="Editar cliente" style={{textDecoration: 'none'}}> 
+            <NavLink to="/show-customers/edit-customer" title="Editar cliente" style={{textDecoration: 'none'}}> 
                 <button>
                     <PencilSimple size={24} weight="bold"/>
                 </button>

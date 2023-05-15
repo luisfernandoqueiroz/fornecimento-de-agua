@@ -1,38 +1,39 @@
 import styles from "./styles.module.scss";
 
-export function RegisterCustomer() {
+export function EditCustomer() {
+
     return(
         <div className={styles.principalContent}>
             <form action="submit" id="customerForm">
-                <h2>CADASTRAR NOVO CLIENTE</h2>
+                <h2>EDITAR INFORMAÇÕES DO CLIENTE: José Pereira da Silva</h2>
                 <div className={styles.fieldsets}>
                     <fieldset className={styles.dataFieldset}>
                         <legend>Dados</legend>
                         <label htmlFor="name">
                             Nome:
-                            <input type="text" id="name" required/>
+                            <input type="text" id="name" placeholder="José Pereira da Silva"/>
                         </label>
                         <label htmlFor="cpf">
                             CPF:
-                            <input type="text" id="cpf" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" required/>
+                            <input type="text" id="cpf" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" placeholder="123.456.789-00"/>
                         </label>
-                        <label htmlFor="phone">
+                        <label htmlFor="phone" >
                             Telefone:
-                            <input type="tel" pattern="[0-9]{11}" id="phone" required/>
+                            <input type="tel" pattern="[0-9]{11}" placeholder="12345678900"/>
                         </label>
                         <label htmlFor="email">
                             Gmail:
-                            <input type="email" pattern=".+@gmail\.com" id="email" required/>
+                            <input type="email" pattern=".+@gmail\.com" id="email" placeholder="jose@gmail.com"/>
                         </label>
 
                         <div className={styles.associateCustomerLabels}>
                             <span>O cliente é associado?</span>
                             <label htmlFor="yes">
-                                <input type="radio" name="associate" id="yes" required/>
+                                <input type="radio" name="associate" id="yes" />
                                 Sim
                             </label>
                             <label htmlFor="not">
-                                <input type="radio" name="associate" id="not" required/>
+                                <input type="radio" name="associate" id="not" />
                                 Não
                             </label>
                         </div>
@@ -42,24 +43,24 @@ export function RegisterCustomer() {
                         <legend>Endereço</legend>
                         <label htmlFor="address">
                             Cidade:
-                            <input type="text" id="address" required/>
+                            <input type="text" id="address" placeholder="Cidade do Jose"/>
                         </label>
                         <label htmlFor="uf">
                             Unidade Federativa:
-                            <input type="text" id="uf" maxLength={2} minLength={2} required/>
+                            <input type="text" id="uf" maxLength={2} minLength={2} placeholder="AB"/>
                         </label>
                         <label htmlFor="addressNumber">
                             Número do endereço:
-                            <input type="text" id="addressNumber" maxLength={4} pattern="[0-9]+" required/>
+                            <input type="text" id="addressNumber" maxLength={4} pattern="[0-9]+" placeholder="123"/>
                         </label>
                         <label htmlFor="community">
                             Comunidade:
-                            <input type="text" id="community"/>
+                            <input type="text" id="community" placeholder="Comunidade do jose"/>
                         </label>
                     </fieldset>
                 </div>
                 <button type="submit" form="customerForm">
-                    Cadastrar
+                    Salvar
                 </button>
             </form>
         </div>

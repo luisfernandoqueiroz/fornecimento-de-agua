@@ -1,20 +1,15 @@
-import { NavLink } from "react-router-dom";
-import { CustomersData } from "../../components/CustomerData";
 import { MagnifyingGlass } from "phosphor-react";
+
+import { Customer } from "../../components/Customer";
 
 import styles from "./styles.module.scss";
 
-export function ShowCustomers() {
-
-
+export function ChooseCustomer() {
     return (
         <div className={styles.principalContent}>
             <div className={styles.tableContent}>
                 <div className={styles.tableHeader}>
-                    CLIENTES CADASTRADOS:
-                    <NavLink to="/show-customers/register-customer" title="Cadastrar cliente" style={{textDecoration: 'none'}}> 
-                        <button>Cadastrar cliente</button>
-                    </NavLink>
+                    ESCOLHA UM CLIENTE:
                 </div>
                 <div className={styles.searchCustomer}>
                     <input type="text" placeholder="Pesquise um cliente por seu nome, ID ou CPF"/>
@@ -26,18 +21,10 @@ export function ShowCustomers() {
                     <span>ID</span>
                     <span>NOME</span>
                     <span>CPF</span>
-                    <span>TELEFONE</span>
-                    <span></span>
                 </div>
                 <div className={styles.customersData}>
-                    <CustomersData />
-                    <CustomersData />
-                    <CustomersData />
-                    <CustomersData />
-                    <CustomersData />
-                    <CustomersData />
-                    <CustomersData />
-                    <CustomersData />
+                    <Customer />
+                    <Customer />
                 </div>
             </div>
         </div>

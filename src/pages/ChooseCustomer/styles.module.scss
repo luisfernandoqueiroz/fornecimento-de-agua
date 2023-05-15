@@ -37,7 +37,6 @@
 
         font-weight: 500;
         transition: background 300ms;
-
     }
 
     button:hover {
@@ -107,13 +106,8 @@
     span:nth-child(2) {
         width: 20rem;
     }
-
-    span:last-child {
-        width: 3rem;
-    }
-
-
 }
+
 
 .customersData {
     max-height: 19rem;
