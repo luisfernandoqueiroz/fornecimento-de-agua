@@ -41,16 +41,12 @@ export function RegisterCustomer() {
                     <fieldset className={styles.addressFieldset}>
                         <legend>Endereço</legend>
                         <label htmlFor="address">
-                            Cidade:
+                            Cidade/UF:
                             <input type="text" id="address" required/>
-                        </label>
-                        <label htmlFor="uf">
-                            Unidade Federativa:
-                            <input type="text" id="uf" maxLength={2} minLength={2} required/>
                         </label>
                         <label htmlFor="addressNumber">
                             Número do endereço:
-                            <input type="text" id="addressNumber" maxLength={4} pattern="[0-9]+" required/>
+                            <input type="text" id="addressNumber" maxLength={10} required/>
                         </label>
                         <label htmlFor="community">
                             Comunidade:
