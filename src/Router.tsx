@@ -2,8 +2,9 @@ import { Routes, Route } from 'react-router-dom'
 
 import { DefaultLayout } from './layouts/DefaultLayout'
 
-import { Home } from './pages/Home'
+import { Start } from './pages/Start'
 import { Login } from './pages/Login'
+import { Home } from './pages/Home'
 import { ShowCustomers } from './pages/ShowCustomers'
 import { EditCustomer } from './pages/EditCustomer'
 import { RegisterCustomer } from './pages/RegisterCustomer'
@@ -15,6 +16,7 @@ import { EditHydrometer } from './pages/EditHydrometer'
 export function Router() {
   return (
     <Routes>
+      <Route path="/start" element={<Start />} />
       <Route path="/login" element={<Login />} />
       <Route path="/" element={<DefaultLayout />}>
         <Route path="/" element={<Home />} />
