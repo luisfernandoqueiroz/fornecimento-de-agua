@@ -2,6 +2,7 @@ import { NavBar } from "../../components/NavBar";
 
 import associacaoLogo from "../../assets/logoAssociacaoBranco.svg";
 import styles from './styles.module.scss'
+import { PresidentsGallery } from "../../components/PresidentsGallery";
 
 export function Start() {
     return (
@@ -31,6 +32,7 @@ export function Start() {
                     <p>Sendo assim, ao longo de sua história, a Associação Comunitária dos Pequenos Produtores Rurais de Campos Gerais já teve nove presidentes: Amintas Ribeiro Neves, José Adão Ramos Queiroz, Jose Fernandes da Silva, Edmilson Ribeiro Neves, José Geraldo Ribeiro, Joao Mauricio Ribeiro, José Cardoso de Barros, Patrícia Júnia Ribeiro e Adilson Ramos de Queiroz.</p>
 
                     <h3>Galeria dos Presidentes</h3>
+                    <PresidentsGallery />
                 </section>
 
                 <section id="sectionSystem">
