@@ -18,18 +18,18 @@ import { Invoice } from './pages/Invoice'
 export function Router() {
   return (
     <Routes>
-      <Route path="/start" element={<Start />} />
+      <Route path="/" element={<Start />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/invoice" element={<Invoice />} />
-      <Route path="/" element={<DefaultLayout />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/show-customers" element={<ShowCustomers />} />
-        <Route path="/show-customers/edit-customer" element={<EditCustomer />} />
-        <Route path="/show-customers/register-customer" element={<RegisterCustomer />} />
-        <Route path="/choose-customer" element={<ChooseCustomer />} />
-        <Route path="/choose-customer/show-hydrometers" element={<ShowHydrometers />} />
-        <Route path="/choose-customer/show-hydrometers/register-hydrometer" element={<RegisterHydrometer />} />
-        <Route path="/choose-customer/show-hydrometers/edit-hydrometer" element={<EditHydrometer />} />
+      <Route path="/home/invoice" element={<Invoice />} />
+      <Route path="/home" element={<DefaultLayout />}>
+        <Route path="/home" element={<Home />} />
+        <Route path="/home/show-customers" element={<ShowCustomers />} />
+        <Route path="/home/show-customers/edit-customer" element={<EditCustomer />} />
+        <Route path="/home/show-customers/register-customer" element={<RegisterCustomer />} />
+        <Route path="/home/choose-customer" element={<ChooseCustomer />} />
+        <Route path="/home/choose-customer/show-hydrometers" element={<ShowHydrometers />} />
+        <Route path="/home/choose-customer/show-hydrometers/register-hydrometer" element={<RegisterHydrometer />} />
+        <Route path="/home/choose-customer/show-hydrometers/edit-hydrometer" element={<EditHydrometer />} />
       </Route> 
     </Routes>
   )

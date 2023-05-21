@@ -11,7 +11,7 @@ export function Hydrometer() {
             <span>01/02/2023</span>
             <span>Casa</span>
             <span>Sim</span>
-            <NavLink to="/choose-customer/show-hydrometers/edit-hydrometer" title="Ver hidrômetros" style={{textDecoration: 'none'}}> 
+            <NavLink to="/home/choose-customer/show-hydrometers/edit-hydrometer" title="Ver hidrômetros" style={{textDecoration: 'none'}}> 
                 <button>
                     <PencilSimple size={24} weight="bold"/>
                 </button>

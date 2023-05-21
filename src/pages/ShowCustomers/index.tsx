@@ -4,7 +4,20 @@ import { MagnifyingGlass } from "phosphor-react";
 
 import styles from "./styles.module.scss";
 
+import { useEffect } from "react";
+
 export function ShowCustomers() {
+
+    useEffect(() => {
+        fetch('http://localhost/backend/return.clientes.php')
+          .then(response => response.json())
+          .then(data => {
+            console.log(data);
+          })
+          .catch(error => {
+            console.error(error);
+          });
+      }, []);
 
 
     return (
@@ -12,7 +25,7 @@ export function ShowCustomers() {
             <div className={styles.tableContent}>
                 <div className={styles.tableHeader}>
                     CLIENTES CADASTRADOS:
-                    <NavLink to="/show-customers/register-customer" title="Cadastrar cliente" style={{textDecoration: 'none'}}> 
+                    <NavLink to="/home/show-customers/register-customer" title="Cadastrar cliente" style={{textDecoration: 'none'}}> 
                         <button>Cadastrar cliente</button>
                     </NavLink>
                 </div>

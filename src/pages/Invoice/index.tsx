@@ -4,6 +4,7 @@ import logoAssociacao from '../../assets/logoAssociacao.svg';
 import { InvoiceReading } from '../../components/InvoiceReading';
 
 export function Invoice() {
+
     return (
       <div className={styles.principalContent}>
         <header className={styles.header}>
@@ -54,10 +55,9 @@ export function Invoice() {
                 <span>Vilma Rodrigues de Matos<br/>Tesoureiro(a)</span>
             </div>
         </section>
-        ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        --------------------------------------------------------------------------------------------------------------------------------------
         <InvoiceReading />
         <strong className={styles.paymentDate}>Data de pagamento: ___/___/______</strong>
       </div>
     );
 }
-

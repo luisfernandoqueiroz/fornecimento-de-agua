@@ -19,7 +19,7 @@ export function Aside() {
               <NavLink to="#" className={styles.navLink}>
                 <button>Configurações</button>
               </NavLink>
-              <NavLink to="#" className={styles.navLink}>
+              <NavLink to="/login" className={styles.navLink}>
                 <button className={styles.exitButton}>Sair</button>
               </NavLink>
           </div>

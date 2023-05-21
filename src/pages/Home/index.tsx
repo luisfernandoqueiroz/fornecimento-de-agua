@@ -18,28 +18,28 @@ export function Home() {
   return (
     <div className={styles.contentWrapper}>
         <div className={styles.dashboard}>
-          <NavLink to="/show-customers" title="Mostrar clientes" style={{textDecoration: 'none'}} className={styles.navLink}> 
+          <NavLink to="/home/show-customers" title="Mostrar clientes" style={{textDecoration: 'none'}} className={styles.navLink}> 
             <Button type={'Clientes'} image={clientesImage}/>
           </NavLink>
-          <NavLink to="#" title="Mostrar clientes" style={{textDecoration: 'none'}} className={styles.navLink}> 
+          <NavLink to="/home/invoice" title="Mostrar faturas" style={{textDecoration: 'none'}} className={styles.navLink}> 
             <Button type={'Faturas'} image={faturasImage}/>
           </NavLink>
-          <NavLink to="#" title="Mostrar clientes" style={{textDecoration: 'none'}} className={styles.navLink}> 
+          <NavLink to="#" title="Mostrar leituras" style={{textDecoration: 'none'}} className={styles.navLink}> 
             <Button type={'Leituras'} image={leiturasImage}/>
           </NavLink>
-          <NavLink to="#" title="Mostrar clientes" style={{textDecoration: 'none'}} className={styles.navLink}> 
+          <NavLink to="#" title="Mostrar funcionários" style={{textDecoration: 'none'}} className={styles.navLink}> 
             <Button type={'Funcionários'} image={funcionariosImage}/>
           </NavLink>
-          <NavLink to="#" title="Mostrar clientes" style={{textDecoration: 'none'}} className={styles.navLink}> 
+          <NavLink to="#" title="Mostrar entradas" style={{textDecoration: 'none'}} className={styles.navLink}> 
             <Button type={'Entradas'} image={entradasImage}/>
           </NavLink>
-          <NavLink to="#" title="Mostrar clientes" style={{textDecoration: 'none'}} className={styles.navLink}> 
+          <NavLink to="#" title="Mostrar saídas" style={{textDecoration: 'none'}} className={styles.navLink}> 
             <Button type={'Saídas'} image={saidasImage}/>
           </NavLink>
-          <NavLink to="/choose-customer" title="Ver hidrômetros" style={{textDecoration: 'none'}} className={styles.navLink}> 
+          <NavLink to="/home/choose-customer" title="Ver hidrômetros" style={{textDecoration: 'none'}} className={styles.navLink}> 
             <Button type={'Hidrômetros'} image={hidrometrosImage}/>
           </NavLink>
-          <NavLink to="#" title="Mostrar clientes" style={{textDecoration: 'none'}} className={styles.navLink}> 
+          <NavLink to="#" title="Mostrar associação" style={{textDecoration: 'none'}} className={styles.navLink}> 
             <Button type={'Associação'} image={associacaoImage}/>
           </NavLink>
         </div>

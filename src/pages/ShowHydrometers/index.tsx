@@ -9,7 +9,7 @@ export function ShowHydrometers() {
             <div className={styles.tableContent}>
                 <div className={styles.tableHeader}>
                     HIDRÔMETROS CADASTRADOS:
-                    <NavLink to="/choose-customer/show-hydrometers/register-hydrometer" title="Cadastrar hidrômetro" style={{textDecoration: 'none'}}> 
+                    <NavLink to="/home/choose-customer/show-hydrometers/register-hydrometer" title="Cadastrar hidrômetro" style={{textDecoration: 'none'}}> 
                         <button>Cadastrar hidrômetro</button>
                     </NavLink>
                 </div>

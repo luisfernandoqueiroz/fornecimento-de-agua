@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { Header } from "../../components/Header";
 import styles from "./styles.module.scss";
 
@@ -21,9 +22,11 @@ export function Login() {
                     </label>
                     
 
-                    <button type="button">
-                        Entrar
-                    </button>
+                    <NavLink to="/home" title="Ir para a home" style={{textDecoration: 'none'}} className={styles.navLink}> 
+                        <button type="button" >
+                            Entrar
+                        </button>
+                    </NavLink>
                 </form>
             </div>
             <footer className={styles.footer}>
