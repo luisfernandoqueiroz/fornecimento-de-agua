@@ -10,7 +10,7 @@ export function Aside() {
               <UserCircle size={50}/>
               João Pereira da Silva
             </span>
-              <NavLink to="/" title="Login" className={styles.navLink}>
+              <NavLink to="/home" title="home" className={styles.navLink}>
                 <button>Início</button>
               </NavLink>
               <NavLink to="#" className={styles.navLink}>
