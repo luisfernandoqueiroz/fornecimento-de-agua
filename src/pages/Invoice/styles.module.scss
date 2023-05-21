@@ -1,0 +1,102 @@
+.principalContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+    margin: 3rem 8rem;
+
+//     width: 793px;
+//   height: 1122px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    img {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.calcContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    border: 6px solid var(--green-300);
+    border-radius: 50px;
+    padding: 2rem;
+    font-weight: 500;
+
+    h2 {
+        padding: .2rem;
+        width: 14rem;
+
+        background: var(--orange-200);
+        border-radius: 50px;
+
+        text-align: center;
+
+        margin-top: -3rem;
+        margin-bottom: 2rem;
+        margin-left: -1.8rem;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.autenticationContainer {
+
+    width: 100%;
+    
+    
+    border: 6px solid var(--green-300);
+    border-radius: 50px;
+    padding: 2rem;
+    font-weight: 500;
+
+    h2 {
+        padding: .2rem;
+        width: 14rem;
+
+        background: var(--orange-200);
+        border-radius: 50px;
+
+        text-align: center;
+
+        margin-top: -3rem;
+        margin-bottom: 2rem;
+        margin-left: -1.8rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 20rem;
+
+        strong {
+            align-self: flex-start;
+        }
+
+        span {
+            align-self: flex-end;
+        }
+    }
+}
+
+.paymentDate {
+align-self: flex-start;
+}

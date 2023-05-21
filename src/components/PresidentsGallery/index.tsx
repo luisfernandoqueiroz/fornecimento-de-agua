@@ -11,6 +11,7 @@ import joseGeraldo from '../../assets/joseGeraldo.svg'
 import joseCardoso from '../../assets/joseCardoso.svg'
 import joseFernandes from '../../assets/joseFernandes.svg'
 import joseAdao from '../../assets/joseAdao.svg'
+import adilsonRamos from '../../assets/adilsonRamos.svg'
 
 import styles from './styles.module.scss'
 
@@ -68,6 +69,10 @@ export function PresidentsGallery() {
           <div className={styles.photo}>
               <img src={joseAdao} alt="José Adão Ramos Queiroz" />
               <span>José Adão Ramos Queiroz</span>
+          </div>
+          <div className={styles.photo}>
+              <img src={adilsonRamos} alt="Adilson Ramos de Queiroz" />
+              <span>Adilson Ramos de Queiroz</span>
           </div>
       </ReactSimplyCarousel>
     )

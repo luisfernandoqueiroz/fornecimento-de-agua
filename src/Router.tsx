@@ -12,12 +12,15 @@ import { ChooseCustomer } from './pages/ChooseCustomer'
 import { ShowHydrometers } from './pages/ShowHydrometers'
 import { RegisterHydrometer } from './pages/RegisterHydrometer'
 import { EditHydrometer } from './pages/EditHydrometer'
+import { Invoice } from './pages/Invoice'
+
 
 export function Router() {
   return (
     <Routes>
       <Route path="/start" element={<Start />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/invoice" element={<Invoice />} />
       <Route path="/" element={<DefaultLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/show-customers" element={<ShowCustomers />} />
@@ -27,7 +30,7 @@ export function Router() {
         <Route path="/choose-customer/show-hydrometers" element={<ShowHydrometers />} />
         <Route path="/choose-customer/show-hydrometers/register-hydrometer" element={<RegisterHydrometer />} />
         <Route path="/choose-customer/show-hydrometers/edit-hydrometer" element={<EditHydrometer />} />
-      </Route>
+      </Route> 
     </Routes>
   )
 }
