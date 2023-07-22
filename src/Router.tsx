@@ -24,10 +24,10 @@ export function Router() {
       <Route path="/home" element={<DefaultLayout />}>
         <Route path="/home" element={<Home />} />
         <Route path="/home/show-customers" element={<ShowCustomers />} />
-        <Route path="/home/show-customers/edit-customer" element={<EditCustomer />} />
+        <Route path="/home/show-customers/edit-customer/:id" element={<EditCustomer />} />
         <Route path="/home/show-customers/register-customer" element={<RegisterCustomer />} />
         <Route path="/home/choose-customer" element={<ChooseCustomer />} />
-        <Route path="/home/choose-customer/show-hydrometers" element={<ShowHydrometers />} />
+        <Route path="/home/choose-customer/show-hydrometers/:id" element={<ShowHydrometers />} />
         <Route path="/home/choose-customer/show-hydrometers/register-hydrometer" element={<RegisterHydrometer />} />
         <Route path="/home/choose-customer/show-hydrometers/edit-hydrometer" element={<EditHydrometer />} />
       </Route> 

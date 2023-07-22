@@ -1,23 +1,31 @@
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { CustomersData } from "../../components/CustomerData";
 import { MagnifyingGlass } from "phosphor-react";
 
 import styles from "./styles.module.scss";
 
-import { useEffect } from "react";
+
+interface CustomerItem {
+    id_cliente: string;
+    nome_completo: string;
+    cpf: string;
+    telefone: string;
+}
 
 export function ShowCustomers() {
+    const [customers, setCustomers] = useState<CustomerItem[]>([]);
 
     useEffect(() => {
         fetch('http://localhost/backend/return.clientes.php')
           .then(response => response.json())
           .then(data => {
-            console.log(data);
+            setCustomers(data);
           })
           .catch(error => {
             console.error(error);
           });
-      }, []);
+    }, []);
 
 
     return (
@@ -43,14 +51,15 @@ export function ShowCustomers() {
                     <span></span>
                 </div>
                 <div className={styles.customersData}>
-                    <CustomersData />
-                    <CustomersData />
-                    <CustomersData />
-                    <CustomersData />
-                    <CustomersData />
-                    <CustomersData />
-                    <CustomersData />
-                    <CustomersData />
+                    {customers.map(customer => (
+                        <CustomersData
+                            key={customer.id_cliente}
+                            id={customer.id_cliente}
+                            name={customer.nome_completo}
+                            cpf={customer.cpf}
+                            phone={customer.telefone}
+                        />
+                    ))}
                 </div>
             </div>
         </div>

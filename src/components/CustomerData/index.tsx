@@ -2,14 +2,23 @@ import { NavLink } from "react-router-dom";
 import styles from "./styles.module.scss";
 import { PencilSimple } from 'phosphor-react';
 
-export function CustomersData() {
+interface CustomersDataProps {
+    id: string;
+    name: string;
+    cpf: string;
+    phone: string;
+}
+
+export function CustomersData({id, name, cpf, phone}: CustomersDataProps) {
+    const editCustomerURL = `/home/show-customers/edit-customer/${id}`;
+
     return (
         <div className={styles.principalContent}>
-            <span>01</span>
-            <span>João Pereira da Silva</span>
-            <span>123.456.789-00</span>
-            <span>48912345678</span>
-            <NavLink to="/home/show-customers/edit-customer" title="Editar cliente" style={{textDecoration: 'none'}}> 
+            <span>{id}</span>
+            <span>{name}</span>
+            <span>{cpf}</span>
+            <span>{phone}</span>
+            <NavLink  to={editCustomerURL} title="Editar cliente" style={{textDecoration: 'none'}}> 
                 <button>
                     <PencilSimple size={24} weight="bold"/>
                 </button>
