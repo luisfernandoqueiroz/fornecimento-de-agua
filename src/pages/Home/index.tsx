@@ -39,7 +39,7 @@ export function Home() {
           <NavLink to="/home/choose-customer" title="Ver hidrômetros" style={{textDecoration: 'none'}} className={styles.navLink}> 
             <Button type={'Hidrômetros'} image={hidrometrosImage}/>
           </NavLink>
-          <NavLink to="#" title="Mostrar associação" style={{textDecoration: 'none'}} className={styles.navLink}> 
+          <NavLink to="/home/association-data" title="Mostrar associação" style={{textDecoration: 'none'}} className={styles.navLink}> 
             <Button type={'Associação'} image={associacaoImage}/>
           </NavLink>
         </div>
