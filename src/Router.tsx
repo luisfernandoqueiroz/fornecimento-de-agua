@@ -14,6 +14,7 @@ import { RegisterHydrometer } from './pages/RegisterHydrometer'
 import { EditHydrometer } from './pages/EditHydrometer'
 import { Invoice } from './pages/Invoice'
 import { AssociationData } from './pages/AssociationData'
+import { HydrometersReadings } from './pages/HydrometersReadings'
 
 
 export function Router() {
@@ -31,7 +32,8 @@ export function Router() {
         <Route path="/home/choose-customer/show-hydrometers/:id" element={<ShowHydrometers />} />
         <Route path="/home/choose-customer/show-hydrometers/register-hydrometer" element={<RegisterHydrometer />} />
         <Route path="/home/choose-customer/show-hydrometers/edit-hydrometer" element={<EditHydrometer />} />
-        <Route path="/home/association-data" element={<AssociationData />} />
+        <Route path="/home/association-data" element={<AssociationData />} /> 
+         <Route path="/home/hydrometers-readings" element={<HydrometersReadings />} /> 
       </Route> 
     </Routes>
   )
