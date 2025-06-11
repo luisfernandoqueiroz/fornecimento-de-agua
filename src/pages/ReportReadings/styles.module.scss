@@ -1,0 +1,40 @@
+.mainContainer {
+  border: 5px solid var(--green-300);
+  border-radius: 10px;
+  width: 90%;
+  margin-top: 6rem;
+}
+
+.formHeader {
+  background-color: var(--green-300);
+  padding: 1rem 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--green-300);
+  padding: 0 1rem 1rem;
+  color: var(--gray-100);
+
+  p {
+    font-weight: 500;  
+  }
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  background-color: var(--green-100);
+}
+
+.readingsContainer {
+
+}
+
+.readingsList {
+
+}

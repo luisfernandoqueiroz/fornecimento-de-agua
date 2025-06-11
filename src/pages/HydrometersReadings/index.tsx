@@ -1,6 +1,7 @@
 import styles from "./styles.module.scss";
 import leiturasImage from "../../assets/leituras.svg"
 import { X, Check } from 'phosphor-react'
+import { NavLink } from "react-router-dom";
 
 export function HydrometersReadings() {
   return(
@@ -11,8 +12,13 @@ export function HydrometersReadings() {
         <img src={leiturasImage} alt="Leituras" />
 
         <div className={styles.buttons}>
-          <button>Informar Leituras</button>
-          <button>Consultar Leituras</button>
+          <NavLink to="/home/choose-customer" title="Escolher cliente" style={{textDecoration: 'none'}}>
+            <button>Informar Leituras</button>
+          </NavLink>
+
+          <NavLink to="/home/choose-customer" title="Escolher cliente" style={{textDecoration: 'none'}}>
+            <button>Consultar Leituras</button>
+          </NavLink>
         </div>
 
         <div className={styles.readingsInformation}>
