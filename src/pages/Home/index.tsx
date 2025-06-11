@@ -24,7 +24,7 @@ export function Home() {
           <NavLink to="/home/invoice" title="Mostrar faturas" style={{textDecoration: 'none'}} className={styles.navLink}> 
             <Button type={'Faturas'} image={faturasImage}/>
           </NavLink>
-          <NavLink to="#" title="Mostrar leituras" style={{textDecoration: 'none'}} className={styles.navLink}> 
+          <NavLink to="/home/hydrometers-readings" title="Mostrar leituras" style={{textDecoration: 'none'}} className={styles.navLink}> 
             <Button type={'Leituras'} image={leiturasImage}/>
           </NavLink>
           <NavLink to="#" title="Mostrar funcionários" style={{textDecoration: 'none'}} className={styles.navLink}> 
@@ -39,7 +39,7 @@ export function Home() {
           <NavLink to="/home/choose-customer" title="Ver hidrômetros" style={{textDecoration: 'none'}} className={styles.navLink}> 
             <Button type={'Hidrômetros'} image={hidrometrosImage}/>
           </NavLink>
-          <NavLink to="#" title="Mostrar associação" style={{textDecoration: 'none'}} className={styles.navLink}> 
+          <NavLink to="/home/association-data" title="Mostrar associação" style={{textDecoration: 'none'}} className={styles.navLink}> 
             <Button type={'Associação'} image={associacaoImage}/>
           </NavLink>
         </div>

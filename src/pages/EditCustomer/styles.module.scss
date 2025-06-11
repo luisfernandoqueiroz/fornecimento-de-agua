@@ -65,22 +65,22 @@
         }
 
         button {
-            width: 8rem;
-            height: 2.4rem;
-            align-self: flex-end;
+          width: 8rem;
+          height: 2.4rem;
+          align-self: flex-end;
 
-            color: var(--gray-100);
-            font-weight: 500;
+          color: var(--gray-100);
+          font-weight: 500;
 
-            border: none;
-            border-radius: 8px;
+          border: none;
+          border-radius: 8px;
 
-            background: var(--green-300);
-            transition: background 300ms;
+          background: var(--green-300);
+          transition: background 300ms;
         }
 
         button:hover {
-            background: var(--green-500);
+          background: var(--green-500);
         }
     }
 
