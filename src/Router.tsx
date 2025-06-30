@@ -16,6 +16,9 @@ import { Invoice } from './pages/Invoice'
 import { AssociationData } from './pages/AssociationData'
 import { HydrometersReadings } from './pages/HydrometersReadings'
 import { ReportReadings } from './pages/ReportReadings'
+import { ShowEmployees } from './pages/ShowEmployees'
+import { RegisterEmployee } from './pages/RegisterEmployee'
+import { EditEmployee } from './pages/EditEmployee'
 
 
 export function Router() {
@@ -29,6 +32,10 @@ export function Router() {
         <Route path="/home/show-customers" element={<ShowCustomers />} />
         <Route path="/home/show-customers/edit-customer/:id" element={<EditCustomer />} />
         <Route path="/home/show-customers/register-customer" element={<RegisterCustomer />} />
+
+        <Route path="/home/show-employees" element={<ShowEmployees />} />
+        <Route path="/home/show-employees/edit-employee/:id" element={<EditEmployee />} />
+        <Route path="/home/show-employees/register-employee" element={<RegisterEmployee />} />
 
         <Route path="/home/choose-customer" element={<ChooseCustomer />} />
 

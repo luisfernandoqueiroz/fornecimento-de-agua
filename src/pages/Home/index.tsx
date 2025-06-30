@@ -27,7 +27,7 @@ export function Home() {
           <NavLink to="/home/hydrometers-readings" title="Mostrar leituras" style={{textDecoration: 'none'}} className={styles.navLink}> 
             <Button type={'Leituras'} image={leiturasImage}/>
           </NavLink>
-          <NavLink to="#" title="Mostrar funcionários" style={{textDecoration: 'none'}} className={styles.navLink}> 
+          <NavLink to="/home/show-employees" title="Mostrar funcionários" style={{textDecoration: 'none'}} className={styles.navLink}> 
             <Button type={'Funcionários'} image={funcionariosImage}/>
           </NavLink>
           <NavLink to="#" title="Mostrar entradas" style={{textDecoration: 'none'}} className={styles.navLink}> 
